@@ -36,7 +36,6 @@ bool vorigeKnopStatus = HIGH;
 void loop() {
   bool huidigeKnopStatus = digitalRead(buttonPinstart);
 
-  // Detecteer overgang van HIGH -> LOW (knop net ingedrukt)
   if (vorigeKnopStatus == HIGH && huidigeKnopStatus == LOW) {
     willekeurigeLED();
     while (digitalRead(buttonPinstart) == LOW) {
