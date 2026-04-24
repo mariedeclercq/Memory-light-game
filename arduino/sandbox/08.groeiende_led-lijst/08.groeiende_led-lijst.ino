@@ -12,7 +12,6 @@ int lengte = 0;
 
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(ledPingroen, OUTPUT);
   pinMode(ledPinblauw, OUTPUT);
 
