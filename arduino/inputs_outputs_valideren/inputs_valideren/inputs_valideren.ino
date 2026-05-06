@@ -6,7 +6,7 @@ int buttonPingroen = 8;
 int buttonPinstart = 11;
 
 void setup() {
-  pinMode(buttonPinblauw, INPUT_PULLUP);
+  pinMode(buttonPinwit, INPUT_PULLUP);
   pinMode(buttonPingeel, INPUT_PULLUP);
   pinMode(buttonPinrood, INPUT_PULLUP);
   pinMode(buttonPingroen, INPUT_PULLUP);
@@ -29,8 +29,8 @@ void loop() {
     delay(500);
   }
 
-  if (digitalRead(buttonPinblauw) == LOW) {
-    Serial.println("Blauwe knop werkt");
+  if (digitalRead(buttonPinwit) == LOW) {
+    Serial.println("Witte knop werkt");
     delay(500);
   }
 

@@ -22,10 +22,10 @@ bool vorigeKnopStatus = HIGH;
 void setup() {
   pinMode(ledPinrood, OUTPUT);
   pinMode(ledPingroen, OUTPUT);
-  pinMode(ledPinblauw, OUTPUT);
+  pinMode(ledPinwit, OUTPUT);
   pinMode(ledPingeel, OUTPUT);
 
-  pinMode(buttonPinblauw, INPUT_PULLUP);
+  pinMode(buttonPinwit, INPUT_PULLUP);
   pinMode(buttonPingeel, INPUT_PULLUP);
   pinMode(buttonPinrood, INPUT_PULLUP);
   pinMode(buttonPingroen, INPUT_PULLUP);
@@ -89,32 +89,32 @@ void speelLijstaf() {
       case 0:
         digitalWrite(ledPinrood, HIGH);
         digitalWrite(ledPingroen, LOW);
-        digitalWrite(ledPinblauw, LOW);
+        digitalWrite(ledPinwit, LOW);
         digitalWrite(ledPingeel, LOW);
         break;
       case 1:
         digitalWrite(ledPinrood, LOW);
         digitalWrite(ledPingroen, HIGH);
-        digitalWrite(ledPinblauw, LOW);
+        digitalWrite(ledPinwit, LOW);
         digitalWrite(ledPingeel, LOW);
         break;
       case 2:
         digitalWrite(ledPinrood, LOW);
         digitalWrite(ledPingroen, LOW);
-        digitalWrite(ledPinblauw, HIGH);
+        digitalWrite(ledPinwit, HIGH);
         digitalWrite(ledPingeel, LOW);
         break;
       case 3:
         digitalWrite(ledPinrood, LOW);
         digitalWrite(ledPingroen, LOW);
-        digitalWrite(ledPinblauw, LOW);
+        digitalWrite(ledPinwit, LOW);
         digitalWrite(ledPingeel, HIGH);
         break;
     }
   delay(500);
   digitalWrite(ledPinrood, LOW);
   digitalWrite(ledPingroen, LOW);
-  digitalWrite(ledPinblauw, LOW);
+  digitalWrite(ledPinwit, LOW);
   digitalWrite(ledPingeel, LOW);
   delay(500);
   i += 1;
@@ -164,14 +164,14 @@ bool checkInput() {
         digitalWrite(ledPingroen, LOW);
       }
 
-      if (digitalRead(buttonPinblauw) == LOW) {
-        digitalWrite(ledPinblauw, HIGH);
+      if (digitalRead(buttonPinwit) == LOW) {
+        digitalWrite(ledPinwit, HIGH);
         if (randomLijst[i] != 2) {
           return false;
         }
         inputGedaan = true;
         delay(300);
-        digitalWrite(ledPinblauw, LOW);
+        digitalWrite(ledPinwit, LOW);
       }
 
       if (digitalRead(buttonPingeel) == LOW) {
@@ -200,14 +200,14 @@ void knipperAlleLeds() { // als speler een fout maakt stopt het spel en knippere
 
     digitalWrite(ledPinrood, HIGH);
     digitalWrite(ledPingroen, HIGH);
-    digitalWrite(ledPinblauw, HIGH);
+    digitalWrite(ledPinwit, HIGH);
     digitalWrite(ledPingeel, HIGH);
 
     delay(500);
 
     digitalWrite(ledPinrood, LOW);
     digitalWrite(ledPingroen, LOW);
-    digitalWrite(ledPinblauw, LOW);
+    digitalWrite(ledPinwit, LOW);
     digitalWrite(ledPingeel, LOW);
 
     delay(500);

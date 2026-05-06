@@ -7,7 +7,7 @@ int ledPingeel = 9;
 void setup() {
   pinMode(ledPinrood, OUTPUT);
   pinMode(ledPingroen, OUTPUT);
-  pinMode(ledPinblauw, OUTPUT);
+  pinMode(ledPinwit, OUTPUT);
   pinMode(ledPingeel, OUTPUT);
 
   Serial.begin(9600);
@@ -27,10 +27,10 @@ void loop() {
   digitalWrite(ledPingroen, LOW);
   delay(1000);
 
-  digitalWrite(ledPinblauw, HIGH);
-  Serial.println("LED blauw aan");
+  digitalWrite(ledPinwit, HIGH);
+  Serial.println("LED wit aan");
   delay(1000);
-  digitalWrite(ledPinblauw, LOW);
+  digitalWrite(ledPinwit, LOW);
   delay(1000);
 
   digitalWrite(ledPingeel, HIGH);
