@@ -1,5 +1,3 @@
-// werkende code voor simon says spel met 4 leds en 4 knoppen
-// je moet ook niet meer op de startknop drukken als je een level hoger gaat, dat gaat vanzelf als je de juiste knoppen indrukt
 
 // werkende code voor simon says spel met 4 leds en 4 knoppen
 // je moet ook niet meer op de startknop drukken als je een level hoger gaat, dat gaat vanzelf als je de juiste knoppen indrukt
