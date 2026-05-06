@@ -1,17 +1,17 @@
 // werkende code voor simon says spel met 4 leds en 4 knoppen
 // je moet ook niet meer op de startknop drukken als je een level hoger gaat, dat gaat vanzelf als je de juiste knoppen indrukt
 
-int ledPinrood = 8;
-int ledPingroen = 9;
-int ledPinblauw = 10;
-int ledPingeel = 11;
+int ledPinrood = 5;
+int ledPingroen = 7;
+int ledPinwit = 3;
+int ledPingeel = 9;
 
-int buttonPinblauw = 2;
-int buttonPingeel = 3;
-int buttonPinrood = 4;
-int buttonPingroen = 5;
+int buttonPinwit = 4;
+int buttonPingeel = 10;
+int buttonPinrood = 6;
+int buttonPingroen = 8;
 
-int buttonPinstart = 6;
+int buttonPinstart = 11;
 
 const int aantalLijst = 100;
 int randomLijst[aantalLijst];

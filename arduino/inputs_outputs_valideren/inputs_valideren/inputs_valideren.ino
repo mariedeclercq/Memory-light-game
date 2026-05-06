@@ -1,9 +1,9 @@
-int buttonPinblauw = 2;
-int buttonPingeel = 3;
-int buttonPinrood = 4;
-int buttonPingroen = 5;
+int buttonPinwit = 4;
+int buttonPingeel = 10;
+int buttonPinrood = 6;
+int buttonPingroen = 8;
 
-int buttonPinstart = 6;
+int buttonPinstart = 11;
 
 void setup() {
   pinMode(buttonPinblauw, INPUT_PULLUP);

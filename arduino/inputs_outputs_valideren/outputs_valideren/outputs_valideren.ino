@@ -1,7 +1,7 @@
-int ledPinrood = 8;
-int ledPingroen = 9;
-int ledPinblauw = 10;
-int ledPingeel = 11;
+int ledPinrood = 5;
+int ledPingroen = 7;
+int ledPinwit = 3;
+int ledPingeel = 9;
 
 
 void setup() {
