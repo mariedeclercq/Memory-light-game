@@ -1,5 +1,3 @@
-[Wokwi_schema](./images/Wokwi_schema_v1.png)
-
 int buttonPinwit = 4;
 int buttonPingeel = 10;
 int buttonPinrood = 6;
