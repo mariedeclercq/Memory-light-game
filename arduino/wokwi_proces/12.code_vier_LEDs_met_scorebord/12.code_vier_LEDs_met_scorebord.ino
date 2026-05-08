@@ -17,11 +17,11 @@ int buttonPingroen = 8;
 
 int buttonPinstart = 11;
 
-const int aantalLijst = 100;
-int randomLijst[aantalLijst];
-int lengte = 0;
+const int aantalLijst = 100; //maximum grootte van de lijst is 100
+int randomLijst[aantalLijst]; // een array waarin de willekeurige kleuren worden opgeslagen
+int lengte = 0; // houdt bij hoeveel kleuren er momenteel in de lijst zitten
 
-bool vorigeKnopStatus = HIGH;
+bool vorigeKnopStatus = HIGH; //variabele om de vorige status van de startknop bij te houden, wordt gebruikt voor het detecteren van een nieuwe druk op de startknop
 
 int score = 0;
 int HighScore = 0;
@@ -47,7 +47,7 @@ void setup() {
 
 void loop() {
 
-  if (lengte == 0) { //als lengte niet nul is dan slaat die heel deze if else over
+  if (lengte == 0) { //als lengte niet nul is dan slaat die heel deze if over
     if(digitalRead(buttonPinstart) == LOW){ // start spel alleen als lengte 0 is en startknop wordt gedrukt
       delay(300); // debounce
       voegToe(); 
@@ -61,9 +61,9 @@ void loop() {
 
   if (checkInput() == true) { // als speler juiste knoppen indrukt gaat spel verder
     delay(500);
-    voegToe();   
+    voegToe();   // voeg een nieuwe kleur toe aan de lijst
 
-    score+=1;
+    score+=1; // verhoog score met 1 punt
 
     // printen van score
     Serial.print(lengte);
@@ -73,16 +73,16 @@ void loop() {
     Serial.println(HighScore);
   } 
 
-  else { 
+  else { // als speler een fout maakt, gaat spel terug naar begin en knipperen alle leds
 
-  if (score > HighScore) {
+  if (score > HighScore) { // als huidige score hoger is dan highscore, update de highscore
     HighScore = score;
   }
 
   lengte = 0;
   score = 0;
 
-  knipperAlleLeds();
+  knipperAlleLeds(); // alle leds knipperen als feedback dat speler een fout heeft gemaakt
 
   
 }
@@ -96,16 +96,16 @@ void loop() {
 // functies
 
 void voegToe() {
-  if (lengte < aantalLijst) {
-    randomLijst[lengte] = random(0, 4);
-    lengte += 1;
+  if (lengte < aantalLijst) { // zolang lengte kleiner is dan maximum grootte van de lijst, voeg een willekeurige kleur toe aan de lijst
+    randomLijst[lengte] = random(0, 4); //geeft een random getal terug (0,1,2 of 3) dat overeenkomt met een kleur
+    lengte += 1; //verhoog lengte met 1 zodat volgende kleur in de lijst op volgende positie wordt opgeslagen
   }
 }
 
 void speelLijstaf() {
-  int i = 0;
-  while (i < lengte){
-    switch(randomLijst[i]) {
+  int i = 0; // begin bij eerste kleur in de lijst
+  while (i < lengte){ // zolang i kleiner is dan lengte (hoeveel kleuren er momenteel in de lijst zitten), speel de kleuren in de lijst af
+    switch(randomLijst[i]) { // switch statement die controleert welke kleur er op positie i in de lijst staat en de bijhorende led aansteekt
       case 0:
         digitalWrite(ledPinrood, HIGH);
         digitalWrite(ledPingroen, LOW);
@@ -132,31 +132,32 @@ void speelLijstaf() {
         break;
     }
   delay(500);
+  // alle leds uitzetten na het tonen van de kleur
   digitalWrite(ledPinrood, LOW);
   digitalWrite(ledPingroen, LOW);
   digitalWrite(ledPinwit, LOW);
   digitalWrite(ledPingeel, LOW);
   delay(500);
-  i += 1;
+  i += 1; // ga naar volgende kleur in de lijst
 }
 }
 
 
-bool checkInput() {
-  int i = 0;
+bool checkInput() { 
+  int i = 0; // begin bij eerste kleur in de lijst
 
-  while (i < lengte) {
+  while (i < lengte) { // zolang i kleiner is dan lengte (hoeveel kleuren er momenteel in de lijst zitten), controleer de input van de speler voor elke kleur in de lijst
 
-    bool inputGedaan = false;
+    bool inputGedaan = false; // variabele om bij te houden of de speler al een input heeft gegeven voor de huidige kleur in de lijst
 
-    while (!inputGedaan) {
+    while (!inputGedaan) { // zolang speler nog geen input heeft gegeven voor de huidige kleur, blijft deze loop draaien
 
-      if (digitalRead(buttonPinrood) == LOW) {
-        digitalWrite(ledPinrood, HIGH);
-        if (randomLijst[i] != 0) {
-          return false;
+      if (digitalRead(buttonPinrood) == LOW) { // als rode knop wordt ingedrukt
+        digitalWrite(ledPinrood, HIGH); // zet rode led aan als feedback dat de knop is ingedrukt
+        if (randomLijst[i] != 0) { // als kleur op positie i niet rood is, maakte speler een fout
+          return false; // stop functie en geef false terug aan loop()
         }
-        inputGedaan = true;
+        inputGedaan = true; 
         delay(300);
         digitalWrite(ledPinrood, LOW);
       }
@@ -193,7 +194,7 @@ bool checkInput() {
 
     }
 
-    i += 1;
+    i += 1; // ga naar volgende kleur in de lijst
   }
 
   return true;
