@@ -226,54 +226,58 @@ void knipperAlleLeds() { // als speler een fout maakt stopt het spel en knippere
 
 //Onderstaande code is deze uit de Processing
 
-import processing.serial.*;
+import processing.serial.*; //seriele bibliotheek van processing laden (om communicatie tussen arduino en processing mogelijk te maken)
 
-Serial myPort;
+Serial myPort; // seriële poort variabele
 
 int score = 0;
 int highScore = 0;
 
 void setup() {
-  size(400, 200);
+  size(400, 200); //maakt een venster van 400 (breedte) bij 200 (hoogte) pixels
 
-  println(Serial.list()); 
+  println(Serial.list()); //print in de console alle beschikbare seriële poorten
   
-  myPort = new Serial(this, Serial.list()[0], 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600); 
+// Serial.list()[0] kiest eerste com poort uit de lijst
+// 9600 is de baudrate (= communicatiesnelheid) deze moet exact gelijk zijn aan: Serial.begin(9600)
 
-  myPort.bufferUntil('\n');
+  myPort.bufferUntil('\n'); // wacht met lezen totdat een newline (\n) ontvangen wordt
 }
 
 void draw() {
-  background(0);
+  background(0); //achtergrond zwart maken
 
-  fill(255);
-  textSize(28);
+  fill(255); //tekst wit maken
+  textSize(28); //tekstgrootte instellen
 
-  text("Simon Says", 20, 40);
-  text("Score: " + score, 20, 90);
-  text("Highscore: " + highScore, 20, 130);
+  text("Simon Says", 20, 40); //tekst "Simon Says" op het scherm zetten op positie (20, 40)
+  text("Score: " + score, 20, 90); //tekst "Score: " gevolgd door de huidige score op het scherm zetten op positie (20, 90)
+  text("Highscore: " + highScore, 20, 130); //tekst "Highscore: " gevolgd door de highscore op het scherm zetten op positie (20, 130)
 }
 
-void serialEvent(Serial myPort) {
+void serialEvent(Serial myPort) { // functie wordt automatisch uitgevoerd wanneer nieuwe data binnenkomt via de seriële poort
 
-  String data = myPort.readStringUntil('\n');
+  String data = myPort.readStringUntil('\n'); // leest de binnenkomende data als een string tot aan de newline (\n)
 
-  if (data != null) {
-    data = trim(data);
+  if (data != null) { // controleert of er daadwerkelijk data is ontvangen
+    data = trim(data); // verwijdert spaties, enters en verborgen tekens aan het begin en einde van de string
 
-    if (data.indexOf(',') > -1) {  // veiligheid
+    if (data.indexOf(',') > -1) {  // controleert of er een komma aanwezig is
+    // indexOf(',') geeft de positie van de komma terug, als er geen komma is gevonden geeft die -1 terug, dus als deze groter is dan -1 betekent dit dat er een komma aanwezig is in de string
 
-      String[] values = split(data, ',');
+      String[] values = split(data, ','); // splitst de string met de komma als scheidingsteken
 
-      if (values.length == 2) {
-        try {
+      if (values.length == 2) { // zijn er precies 2 delen na het splitsen (score en highscore)
+        try { // probeert de tekst om te zetten naar gehele getallen
           score = int(values[0]);
           highScore = int(values[1]);
         } 
-        catch (Exception e) {
-          println("Foute data ontvangen: " + data);
+        catch (Exception e) { // als er een fout optreedt bij het omzetten van de tekst naar getallen, wordt deze catch-blok uitgevoerd
+          println("Foute data ontvangen: " + data); // print foutmelding + de ontvangen data
         }
       }
+      //try = probeer deze code uit te voeren, als er een fout optreedt ga dan naar catch
     }
   }
 }
