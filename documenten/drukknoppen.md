@@ -8,6 +8,8 @@ Dit is echter niet correct, omdat drukknoppen intern zo zijn opgebouwd dat de ov
 
 Bij de eerste aansluitingsmethode werd één aansluiting tegelijk met zowel ground als een digitale poort verbonden, wat niet correct is en storingen veroorzaakte in de schakeling.
 
+Daarna werden de drukknoppen wel correct opnieuw aangesloten volgens de juiste diagonaalverbinding, waardoor ze correct functioneerden en de invoer betrouwbaar werd geregistreerd.
+
 <p align="center">
   <img src="../images/juiste aansluitmethode knoppen.jpg" width="50%">
 </p>
