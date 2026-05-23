@@ -13,5 +13,5 @@ Toch kon de verbinding met de pie niet worden opgezet. Er werd geprobeerd met de
 ### LCD
 Vervolgens werd er overgeschakeld naar een LCD-scherm. De code werd online gevonden en leek eenvoudig te implementeren. Hiervoor moest wel een library geïnstalleerd worden. Dit lukte, maar bij het uploaden naar de Arduino verscheen een foutmelding dat de library niet geïnstallee
 <p align="center">
-  <img src="../images/LCD code.png" width="100%">
+  <img src="../images/LCD afbeelding.png" width="100%">
 </p>
