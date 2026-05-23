@@ -10,8 +10,6 @@ Het doel van het spel is om een steeds langer wordend lichtpatroon correct te on
   <img src="./images/eindresultaat.gif" width="50%">
 </p>
 
-[Bekijk volledige video in goede kwaliteit](./images/eindresultaat.mp4)
-
 ### Benodigdheden
 * Arduino <br>
     Er werd een Arduino Nano 3 IOT gebruikt, omdat het initiële plan was om het scorebord via bleuthoot op de computer weer te geven. De bleuthoot werd niet gebruikt, dus een Arduino Nano werkt even goed voor dit project.
