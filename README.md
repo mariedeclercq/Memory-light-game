@@ -7,7 +7,7 @@ Het spel combineert verschillende elektronische componenten, zoals LED’s, druk
 Het doel van het spel is om een steeds langer wordend lichtpatroon correct te onthouden en na te bootsen. Vier verlichte drukknoppen lichten één voor één op en vormen samen een bepaalde volgorde. Daarna is het aan de speler om deze volgorde correct opnieuw in te drukken. Wanneer de speler hierin slaagt, wordt het patroon uitgebreid met een extra stap, waardoor de moeilijkheidsgraad geleidelijk toeneemt. Bij een foutieve invoer eindigt het spel en moet de speler opnieuw beginnen.
 
 <p align="left">
-   <img src="/images/endresultaat.mp4" width="50%">
+   <img src="./images/eindresultaat.mp4" width="50%">
  </p>
 
 ### Benodigdheden
