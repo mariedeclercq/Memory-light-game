@@ -30,9 +30,9 @@ fotooooooo/videooo
 Tijdens dit project werd er veel bijgeleerd doordat er zelf veel moest worden uitgezocht en problemen moesten worden opgelost. Omdat er nog weinig ervaring was met Arduino, verliep niet alles meteen zoals gepland en werden er in het begin verschillende fouten gemaakt. Deze fouten waren echter leerrijk en zorgden voor een beter inzicht in hoe het systeem in elkaar zit.
 
 * Er werd lange tijd enkel getest in Wokwi, waardoor de overstap naar de echte hardware later in het proces pas gebeurde Hierdoor kwamen sommige fouten pas laat aan het licht, wat extra aanpassingen noodzakelijk maakte. Dit toonde aan dat simulatie handig is, maar niet alle praktijkproblemen volledig kan vervangen.
-    * Aansluiting van drukknoppen op breadbord.
+    * Aansluiting van drukknoppen op breadbord
     * Kapotte LED
-* Het scorebord was uiteindelijk het moeilijkste onderdeel van het project. Dit vergde veel trial-and-error en doorzettingsvermogen, maar zorgde uiteindelijk wel voor een werkend resultaat
+* Het scorebord was uiteindelijk het moeilijkste onderdeel van het project. Dit vergde veel trial-and-error en doorzettingsvermogen, maar zorgde uiteindelijk wel voor een werkend resultaat. [📃Schermproces](../docs/scherm.md)
 * Het schrijven van de code gebeurde in verschillende stappen, met veel testen tussendoor. Ook hierbij was veel trial-and-error nodig om fouten op te sporen en te verbeteren.
 
 In het algemeen was dit een zeer leerrijk project waarin vooral probleemoplossend denken, geduld en stap-voor-stap werken centraal stonden.
