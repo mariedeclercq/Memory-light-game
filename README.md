@@ -1,7 +1,12 @@
 # Memory-light-game
-Voor deze overkoepelende opdracht werd er gekozen voor het klassieke 'Simon Says' game. Door de combinatie van LED's, drukknoppen en een scorebord leek dit een interessant onderwerp. 
 
-Het spel bestaat uit vier drukknoppen met lichtjes die om de beurt gaan branden en zo een patroon gaan vormen. Vervolgens is het de beurt aan de speler om de knoppen weer in de juiste volgorde te gaan indrukken. Als dit lukt, komt er steeds een LED bijnwaardoor de speler dit patroon zal moeten onthouden. Hierdoor neemt de moeilijkheidsgraad toe en bij een fout moet de speler herstarten.
+Voor deze overkoepelende opdracht werd gekozen voor een eigen versie van het klassieke memoryspel ‘Simon Says’. De keuze voor dit project kwam voort uit de wens om iets te maken dat niet alleen technisch interessant is, maar ook echt gebruikt en gespeeld kan worden. Een interactief spel leek daarom een leuke en motiverende uitdaging. Daarnaast hadden beide studenten nog geen ervaring met Arduino, waardoor er bewust gezocht werd naar een project dat haalbaar was, maar tegelijk voldoende uitdaging bood om nieuwe vaardigheden aan te leren.
+
+Het spel combineert verschillende elektronische componenten, zoals LED’s, drukknoppen en een scorebord, waardoor het een leerrijke toepassing vormt binnen een Arduino-project. Bovendien biedt het project de mogelijkheid om zowel hardware als software met elkaar te laten samenwerken.
+
+Het doel van het spel is om een steeds langer wordend lichtpatroon correct te onthouden en na te bootsen. Vier verlichte drukknoppen lichten één voor één op en vormen samen een bepaalde volgorde. Daarna is het aan de speler om deze volgorde correct opnieuw in te drukken. Wanneer de speler hierin slaagt, wordt het patroon uitgebreid met een extra stap, waardoor de moeilijkheidsgraad geleidelijk toeneemt. Bij een foutieve invoer eindigt het spel en moet de speler opnieuw beginnen.
+
+fotooooooo/videooo
 
 ### Benodigdheden
 * Arduino <br>
@@ -20,3 +25,14 @@ Het spel bestaat uit vier drukknoppen met lichtjes die om de beurt gaan branden 
 * Computer
     * Arduino IDE
     * Processing
+
+### Reflectie
+Tijdens dit project werd er veel bijgeleerd doordat er zelf veel moest worden uitgezocht en problemen moesten worden opgelost. Omdat er nog weinig ervaring was met Arduino, verliep niet alles meteen zoals gepland en werden er in het begin verschillende fouten gemaakt. Deze fouten waren echter leerrijk en zorgden voor een beter inzicht in hoe het systeem in elkaar zit.
+
+* Er werd lange tijd enkel getest in Wokwi, waardoor de overstap naar de echte hardware later in het proces pas gebeurde Hierdoor kwamen sommige fouten pas laat aan het licht, wat extra aanpassingen noodzakelijk maakte. Dit toonde aan dat simulatie handig is, maar niet alle praktijkproblemen volledig kan vervangen.
+    * Aansluiting van drukknoppen op breadbord.
+    * Kapotte LED
+* Het scorebord was uiteindelijk het moeilijkste onderdeel van het project. Dit vergde veel trial-and-error en doorzettingsvermogen, maar zorgde uiteindelijk wel voor een werkend resultaat
+* Het schrijven van de code gebeurde in verschillende stappen, met veel testen tussendoor. Ook hierbij was veel trial-and-error nodig om fouten op te sporen en te verbeteren.
+
+In het algemeen was dit een zeer leerrijk project waarin vooral probleemoplossend denken, geduld en stap-voor-stap werken centraal stonden.
