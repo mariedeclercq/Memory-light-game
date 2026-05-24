@@ -1,0 +1,20 @@
+Om dit proces in de praktijk te gaan vertalen, werd dit stap voor stap opgebouwd. 
+Er werd vertrokken vanuit de basis: de schakeling van de vier LED's en weerstanden. De kathode van de LED is verbonden met de weerstand
+en de anode met de ground
+Ook worden er twee breadbords gebruikt om de nodige overzicht te bewaren.
+
+Er werd gebruik gemaakt van bijhorende bijlage:
+
+
+
+
+De witte LED is aangesloten op D2, de rode op D3, de groene op D4 en de witte op D5. De zwarte kabel is met de ground verbonden.
+Hier zijn de draden dezelfde kleur als de bijhorende LED en de kabel naar de ground is zwart.
+
+
+
+
+
+
+
+
