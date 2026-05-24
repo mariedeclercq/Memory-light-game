@@ -1,6 +1,6 @@
-// ik wil dat de leds pas beginnen te knipperen als ik op de startknop druk
-// maar nu moet ik op de startknop blijven drukken om de leds te laten knipperen, dit is niet de bedoeling
-// ik wil dat vanaf de startknop is ingedrukt geweest, de leds beginnen te knipperen
+// Ik wil dat de leds pas beginnen te knipperen als ik op de startknop druk.
+// maar nu moet ik op de startknop blijven drukken om de leds te laten knipperen, dit is niet de bedoeling.
+// Ik wil dat vanaf de startknop is ingedrukt geweest, de leds beginnen te knipperen.
 
 int ledPinrood = 8;
 int ledPingroen = 9;

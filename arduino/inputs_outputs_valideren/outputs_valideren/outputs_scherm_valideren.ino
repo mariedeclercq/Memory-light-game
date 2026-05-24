@@ -1,4 +1,4 @@
-// Via deze kleine test werd nagegaan of het programme met succes werkt of niet.
+// Via deze kleine test werd nagegaan of het programma met succes werkt of niet.
 
 void setup() {
   size(400, 200);
