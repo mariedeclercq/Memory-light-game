@@ -1,16 +1,7 @@
 In de finale hardware werd de vorige stap toegepast maar nu met vier LED's en bijhorende weerstanden en drukknoppen. Ook een extra drukknop werd toegevoed om het spel te doen starten. De opstelling is hier anders zodat de LED's met bijhorende knoppen dicht genoeg bij elkaar staan dat het voor de speler duidelijk is om de juiste knoppen met LED's te combineren. Hierdoor werd het aantal kabels gereduceerd en waren er maar drie nodig. 
-De kleuren van de kabels zijn dezelfde als bijhorende LED, die van de grounds zijn zwart en de extra startknop is blauw. 
+
+<p align="center">
+  <img src="../images/juiste aansluitmethode knoppen.jpg" width="50%">
+</p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-Eens aangesloten met de Arduino werkte het maar waren de drukknoppen nog niet optimaal. Als ze te diep in het breadbord zaten, werden ze twee keer na elkaar ingedrukt wat een ongewenst effect had. Het spel was hierdoor abrupt onderbroken. De drukknop heeft vier pinnen en de aangesloten kabels moeten diagonaal staan in plaats van over elkaar. Dit loste het probleem op en de knoppen ondervonden geen storingen meer.
