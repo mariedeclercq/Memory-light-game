@@ -8,13 +8,13 @@ Het doel van het spel is om een steeds langer wordend lichtpatroon correct te on
 
 User flow van het spel:
 
-<p align="left">
+<p align="center">
   <img src="./images/Mermaid flows.jpg" width="50%">
 </p>
 
 
 
-<p align="left">
+<p align="center">
   <img src="./images/eindresultaat.gif" width="50%">
 </p>
 
