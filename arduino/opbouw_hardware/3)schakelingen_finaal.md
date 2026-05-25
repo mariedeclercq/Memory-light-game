@@ -1,7 +1,7 @@
 In de finale hardware werd de vorige stap toegepast maar nu met vier LED's en bijhorende weerstanden en drukknoppen. Ook een extra drukknop werd toegevoed om het spel te doen starten. De opstelling is hier anders zodat de LED's met bijhorende knoppen dicht genoeg bij elkaar staan dat het voor de speler duidelijk is om de juiste knoppen met LED's te combineren. Hierdoor werd het aantal kabels gereduceerd en waren er maar drie nodig. 
 
 <p align="center">
-  <img src="../images/juiste aansluitmethode knoppen.jpg" width="50%">
+  <img src="../../images/juiste aansluitmethode knoppen.jpg" width="50%">
 </p>
 
 

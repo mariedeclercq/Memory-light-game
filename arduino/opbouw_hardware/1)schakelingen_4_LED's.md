@@ -15,7 +15,7 @@ De witte LED is aangesloten op D2, de rode op D3, de groene op D4 en de witte op
 Hier zijn de draden dezelfde kleur als de bijhorende LED en de kabel naar de ground is zwart.
 
 <p align="center">
-  <img src="../../images/Opstelling 4LEDs.jpeg" width="100%" >
+  <img src="../../images/vier LEDS.png" width="100%" >
 </p>
 
 

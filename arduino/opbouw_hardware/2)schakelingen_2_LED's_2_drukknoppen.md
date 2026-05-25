@@ -5,6 +5,6 @@ niet toegepast wegens gebrek aan de correcte legende.
 
 
 <p align="center">
-  <img src="../../images/Opstelling 2drukknoppen.jpeg" width="100%" >
+  <img src="../../images/twee drukknoppen.png" width="100%" >
 </p>
 
