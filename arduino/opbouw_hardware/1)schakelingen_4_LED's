@@ -7,7 +7,7 @@ Er werd gebruik gemaakt van bijhorende bijlage:
 
 
 <p align="center">
-  <img src="../../images/pinout_diagram.png" width="100%" >
+  <img src="../../images/pinout diagram.png" width="100%" >
 </p>
 
 
@@ -15,9 +15,8 @@ De witte LED is aangesloten op D2, de rode op D3, de groene op D4 en de witte op
 Hier zijn de draden dezelfde kleur als de bijhorende LED en de kabel naar de ground is zwart.
 
 <p align="center">
-  <img src="../../images/Opstelling_4LED's.jpeg" width="100%" >
+  <img src="../../images/Opstelling 4LEDs.jpeg" width="100%" >
 </p>
-
 
 
 

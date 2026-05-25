@@ -36,6 +36,13 @@ User flow van het spel:
     * Arduino IDE
     * Processing
 
+### Connectieschema
+Onderstaand schema werd in Wokwi gegenereerd.
+
+<p align="center">
+  <img src="images/connectieschema.png" width="50%">
+</p>
+
 ### Reflectie
 Tijdens dit project werd er veel bijgeleerd doordat er zelf veel moest worden uitgezocht en problemen moesten worden opgelost. Omdat er nog weinig ervaring was met Arduino, verliep niet alles meteen zoals gepland en werden er in het begin verschillende fouten gemaakt. Deze fouten waren echter leerrijk en zorgden voor een beter inzicht in hoe het systeem in elkaar zat.
 
