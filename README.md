@@ -6,6 +6,14 @@ Het spel combineert verschillende elektronische componenten, zoals LED’s, druk
 
 Het doel van het spel is om een steeds langer wordend lichtpatroon correct te onthouden en na te bootsen. Vier verlichte drukknoppen lichten één voor één op en vormen samen een bepaalde volgorde. Daarna is het aan de speler om deze volgorde correct opnieuw in te drukken. Wanneer de speler hierin slaagt, wordt het patroon uitgebreid met een extra stap, waardoor de moeilijkheidsgraad geleidelijk toeneemt. Bij een foutieve invoer eindigt het spel en moet de speler opnieuw beginnen. Zowel de score, highscore en een foutmelding bij het maken van een fout zullen visueel te zien zijn op het scorebord. Dit geeft de speler een betere spelervaring.
 
+User flow van het spel:
+
+<p align="left">
+  <img src="./images/Mermaid flows.jpg" width="50%">
+</p>
+
+
+
 <p align="left">
   <img src="./images/eindresultaat.gif" width="50%">
 </p>

@@ -29,7 +29,7 @@ Alles verliep op het eerste zich vlot, tot de library niet wou werken. Bleek dat
 Een laatste optie was met het werken met de app Processing. Dit is een programmeertaal die vooral gebruikt wordt voor visueel beeldmateriaal weer te geven. Is gebasseerd op Java en kan zeer simpel geconnecteerd worden met de Arduino. Dit zal helaas niet via een extern scherm kunnen gebeuren dus zal deze op het laptopscherm zichtbaar zijn. 
 
 <p align="center">
-  <img src="" width="100%" >
+  <img src="../images/scorebord simon says.jpeg" width="100%" >
 </p>
 
 
