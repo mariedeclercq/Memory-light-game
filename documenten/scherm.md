@@ -36,6 +36,3 @@ Een laatste optie was met het werken met de app Processing. Dit is een programme
 <p align="center">
   <img src="../images/scorebord simon says.jpeg" width="100%" >
 </p>
-
-
-
