@@ -2,6 +2,11 @@ De score werd reeds correct weergegeven in de Serial Monitor, maar het was de be
 
 ### Protopie connect
 Eerst werd geprobeerd om dit via Protopie Connect te realiseren. De scores kwamen correct binnen in Protopie Connect. Er werd gezorgd dat enkel het cijfer van de score werd doorgestuurd, aangezien dit de enige benodigde informatie was. 
+
+<p align="center">
+  <img src="../images/binnenkomende scores protopie.png" width="80%">
+</p>
+
 Toch kon de verbinding met de pie niet worden omgezet. Er werd geprobeerd met de functies receive en assign, maar het bleef onduidelijk welke waarden precies moesten worden ingevuld. Ook werd er gewerkt met een variabele, maar dit bracht geen oplossing.
 <p align="center">
   <img src="../images/protopie connect 1.png" width="80%">
