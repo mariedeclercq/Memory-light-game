@@ -5,22 +5,28 @@ Voor deze overkoepelende opdracht werd gekozen voor een eigen versie van het kla
 Het spel combineert verschillende elektronische componenten, zoals LED’s, drukknoppen en een scorebord, waardoor het een leerrijke toepassing vormt binnen een Arduino-project. Bovendien biedt het project de mogelijkheid om zowel hardware als software met elkaar te laten samenwerken.
 
 Het doel van het spel is om een steeds langer wordend lichtpatroon correct te onthouden en na te bootsen. Vier verlichte drukknoppen lichten één voor één op en vormen samen een bepaalde volgorde. Daarna is het aan de speler om deze volgorde correct opnieuw in te drukken. Wanneer de speler hierin slaagt, wordt het patroon uitgebreid met een extra stap, waardoor de moeilijkheidsgraad geleidelijk toeneemt. Bij een foutieve invoer eindigt het spel en moet de speler opnieuw beginnen.
+User flow van het spel:
 
-<p align="left">
+<p align="center">
+  <img src="./images/Mermaid flows.jpg" width="50%">
+</p>
+
+
+
+<p align="center">
   <img src="./images/eindresultaat.gif" width="50%">
 </p>
 
 ### Benodigdheden
 * Arduino <br>
-    Er werd een Arduino Nano 3 IOT gebruikt, omdat het initiële plan was om het scorebord via bleuthoot op de computer weer te geven. De bleuthoot werd niet gebruikt, dus een Arduino Nano werkt even goed voor dit project.
+    Er werd een Arduino Nano 3 IOT gebruikt, omdat het initiële plan was om het scorebord via bluetooth op de computer weer te geven. De bluetooth werd niet gebruikt, dus een Arduino Nano werkt even goed voor dit project.
 * Breadbord 2x
 * LED's
     * rood
     * geel
     * blauw
     * groen <br>
-    Andere kleuren kunnen ook gebruikt worden, besst wel altijd vier verschillende kleuren.
-* Voorschakelweerstand 330Ω 4x
+    Andere kleuren kunnen ook gebruikt worden, best wel altijd vier verschillende kleuren.
 * Drukknoppen 5x
 * Male to male jumper wires 16x <br>
     Gebruik een kleurcode voor overzicht.
@@ -28,6 +34,14 @@ Het doel van het spel is om een steeds langer wordend lichtpatroon correct te on
 * Computer
     * Arduino IDE
     * Processing
+
+### Connectieschema
+Onderstaand schema werd in Wokwi gegenereerd.
+
+<p align="center">
+  <img src="images/connectieschema.png" width="50%">
+</p>
+
 
 ### Reflectie
 Tijdens dit project werd er veel bijgeleerd doordat er zelf veel moest worden uitgezocht en problemen moesten worden opgelost. Omdat er nog weinig ervaring was met Arduino, verliep niet alles meteen zoals gepland en werden er in het begin verschillende fouten gemaakt. Deze fouten waren echter leerrijk en zorgden voor een beter inzicht in hoe het systeem in elkaar zit.
